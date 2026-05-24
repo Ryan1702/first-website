@@ -1,32 +1,22 @@
-name: first-website
+name: publish site
+# 触发条件
 on:
-  # 当 main 分支收到代码推送（push）时自动触发
   push:
     branches:
       - main
-  # 当有拉取请求（PR）合入 main 分支时触发
-  pull_request:
-    branches:
-      - main
-
+# workflow 的具体内容
 jobs:
   deploy:
-    runs-on: ubuntu-latest # 使用最新的 Ubuntu 虚拟机运行
+    # 创建一个 Ubuntu 容器
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3 # 切换并拉取你的项目代码
-
-      - name: Set up Python
-        uses: actions/setup-python@v4 # 在云端初始化 Python 环境
+      # 先打开 main 分支
+      - uses: actions/checkout@v2
+      # 再安装 Python 和相关环境
+      - uses: actions/setup-python@v2
         with:
-          python-version: 3.12
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install mkdocs-material
-          pip install pymdown-extensions
-          # 如果你以后还想加别的 MkDocs 插件，可以在这里继续往后添加 pip install
-
-      - name: Build and Deploy
-        run: mkdocs gh-deploy --force # 强制编译并将其安全地推送到 gh-pages 分支
+          python-version: 3.x
+      # 使用包管理工具 pip 安装 mkdocs-material
+      - run: pip install mkdocs-material
+      # 使用 mkdocs-material 构建网站并部署到 gh-pages 分支
+      - run: mkdocs gh-deploy --force

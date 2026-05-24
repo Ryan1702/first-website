@@ -1,93 +1,159 @@
-# 1. 项目基础信息
-site_name: WYF的网站           # 网站标题
+# [Info]
+# 左上角标题
+site_name: WYF的个人网站
 site_url: https://ryan1702.github.io/first-website/
-site_author: Ryan1702
-site_description: 这是一个私人的网站
-copyright: 'Copyright &copy; 2026 Ryan1702'
+site_author: WYF
+site_description: WYF的个人网站
 
-# 2. 仓库信息（配置后右上角会出现 GitHub 图标和 Star 数）
-repo_name: first-website      # 仓库名称
-repo_url: https://github.com/ryan1702/first-website
-edit_uri: edit/main/docs/       # 点击“编辑此页”时的跳转路径
 
-# 3. 主题设置 (Material 主题核心配置)
+
+# [Navigtion]
+nav:
+
+
+# [UI]
+# [top]
 theme:
   name: material
-  language: zh                  # 中文界面（按钮、搜索提示等）
-  logo: assets/logo.png         # 网站 Logo（需在 docs/assets/ 下放置图片）
-  favicon: assets/favicon.png   # 网页小图标
-  
-  # 特性配置 (Features)
-  features:
-    - navigation.tabs           # 启用顶部导航栏标签
-    - navigation.sections       # 侧边栏分组显示
-    - navigation.top            # 启用“回到顶部”按钮
-    - navigation.tracking       # 滚动时自动更新 URL 锚点
-    - search.suggest            # 搜索框输入建议
-    - search.highlight          # 搜索结果高亮
-    - content.code.copy         # 代码块一键复制按钮
-    - content.code.annotate     # 允许在代码中添加注释说明
-
-  # 调色板 (Palette) - 支持深浅模式手动/自动切换
+  # [切换日间模式和夜间模式]
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette-toggle
   palette:
-    # 浅色模式
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo           # 主题色（顶部栏）
-      accent: indigo            # 交互色（链接、按钮等）
+    # 日间模式
+    - scheme: default
+      # 主颜色
+      # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
+      primary: indigo
+      # 链接等可交互元件的高亮色
+      # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
+      accent: orange
+      toggle:
+        # 图标
+        icon: material/weather-night
+        # 鼠标悬浮提示
+        name: 切换至夜间模式
+    # 夜间模式
+    - scheme: slate
+      primary: indigo
+      accent: orange
       toggle:
         icon: material/weather-sunny
-        name: 切换至深色模式
-    # 深色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 切换至浅色模式
-
-  # 字体设置
-  font:
-    text: Roboto
-    code: Roboto Mono
-
-# 4. 导航栏结构 (Navigation)
-nav:
-  - 首页: index.md
-  - 入门指南: 
-      - 环境搭建: guide/install.md
-      - 快速开始: guide/quickstart.md
-  - 进阶教程:
-      - 自动化部署: advanced/deploy.md
-      - 样式自定义: advanced/style.md
-  - 关于: about.md
-
-# 5. Markdown 增强扩展 (Extensions)
-markdown_extensions:
-  - admonition                  # 警告框/提示框 (!!! note)
-  - attr_list                   # 允许在 Markdown 中添加 CSS 类或属性
-  - md_in_html                  # 允许在 HTML 标签中写 Markdown
-  - pymdownx.details            # 折叠列表 (??? note)
-  - pymdownx.superfences        # 嵌套代码块支持
-  - pymdownx.tasklist:          # 任务列表支持 ( - [ ] )
-      custom_checkbox: true
-  - pymdownx.magiclink          # 自动识别 URL 为链接
-  - pymdownx.arithmatex:        # 数学公式支持 (MathJax)
-      generic: true
-  - pymdownx.highlight:         # 代码高亮
-      anchor_linenums: true
-      linenums: true
-  - toc:
-      permalink: true           # 标题旁显示锚点链接
-
-# 6. 插件设置
-plugins:
-  - search:
-      lang: en, ja, zh          # 必须包含 zh 才能支持中文搜索
-
-# 7. 自定义社交链接 (显示在页脚)
+        name: 切换至日间模式
+  features:
+    # 使用 Tab 来进行分类
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.tabs
+    # 返回顶部的按钮，在上滑时出现
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+    - navigation.top
+    # 给每个 Tab 添加一个 index.md，且在点击 Tab 时打开
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages-with-section-index-pages
+    - navigation.indexes
+    # 打开 Tab 时左侧目录全部展开
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
+    - navigation.expand
+    # 搜索输入一些字母时推荐补全整个单词
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
+    - search.suggest
+    # 搜索的关键词文章加入高亮
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-highlighting
+    - search.highlight
+    # 可以通过按钮复制代码
+    # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-copy-button
+    - content.code.copy
+    # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+    - content.action.edit
+  language: zh # 一些提示性的文字会变成中文
+  icon:
+    # [添加 GitHub 仓库]
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon
+    repo: fontawesome/brands/github
+# [点击按钮跳转至 GitHub 修改 Markdown 源文件]
+# https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+edit_uri: edit/main/docs/
+# [top-right corner]
+# [添加 GitHub 仓库]
+# https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
+repo_url: https://github.com/ryan1702/first-website/
+repo_name: first-website
+# [bottom-left corner]
+# [版权说明]
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#copyright-notice
+copyright: 吴悠凡 CC-BY-4.0
+# [bottom-right corner]
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ryan1702
+  # [添加社交网络图标和链接]
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
+  # 搜索图标：https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+  # name 会在鼠标悬浮时提示
+  social: # icons
+    - name: GitHub | Ryan1702
+      icon: fontawesome/brands/github
+      link: https://github.com/Ryan1702
+
+# [Extensions]
+plugins:
+  # [搜索功能]
+  # https://squidfunk.github.io/mkdocs-material/plugins/search/
+  # 之前中文搜索是 Insider 的功能（https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/），现在好像已经是默认功能了，
+  - search:
+      lang:
+        - zh
+        - en
+        - ja
+  # [给单篇文章添加标签]
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  # https://squidfunk.github.io/mkdocs-material/plugins/tags/#meta.tags
+  - tags
+markdown_extensions:
+  # [数学公式支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - pymdownx.arithmatex:
+      generic: true
+  # [图片功能支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/images/
+  # 给 Markdown 图片语法后面添加 `{width="300"}` 设置大小
+  - attr_list
+  - md_in_html
+  # [给标题添加链接]
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#+toc.permalink
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  # [代码语法高亮]
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#highlight
+  - pymdownx.highlight:
+      # 显示行号
+      linenums: true
+      # 显示编程语言名称
+      auto_title: true
+      # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.line_spans
+      line_spans: __span
+      # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.pygments_lang_class
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  # [Markdown 提示]
+  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - admonition
+  - pymdownx.details
+  # [Markdown footnote 语法支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/footnotes/
+  - footnotes
+
+extra_javascript:
+  # [数学公式支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - mkdocs/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+extra_css:
+  # [数学公式支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  # [自定义 css]
+  # 不使用底部的翻页
+  - mkdocs/css/no-footer.css
+  # 无序列表符号自定义
+  - mkdocs/css/unordered-list-symbols.css
