@@ -5,12 +5,12 @@ site_description: WYF的个人网站
 
 nav:
   - 首页: index.md
+  - 个人介绍: about.md
   - 课内学习:
     - 学习计划: in-school/plan.md
   - 课外学习:
     - 算法竞赛:
       - 学习计划: out-school/algorithms/plan.md
-  - 关于我: about.md
 
 theme:
   name: material
