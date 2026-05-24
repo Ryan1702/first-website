@@ -1,1 +1,93 @@
-site_name: My Docs
+# 1. 项目基础信息
+site_name: WYF的网站           # 网站标题
+site_url: https://ryan1702.github.io/first-website/
+site_author: Ryan1702
+site_description: 这是一个私人的网站
+copyright: 'Copyright &copy; 2026 Ryan1702'
+
+# 2. 仓库信息（配置后右上角会出现 GitHub 图标和 Star 数）
+repo_name: first-website      # 仓库名称
+repo_url: https://github.com/ryan1702/first-website
+edit_uri: edit/main/docs/       # 点击“编辑此页”时的跳转路径
+
+# 3. 主题设置 (Material 主题核心配置)
+theme:
+  name: material
+  language: zh                  # 中文界面（按钮、搜索提示等）
+  logo: assets/logo.png         # 网站 Logo（需在 docs/assets/ 下放置图片）
+  favicon: assets/favicon.png   # 网页小图标
+  
+  # 特性配置 (Features)
+  features:
+    - navigation.tabs           # 启用顶部导航栏标签
+    - navigation.sections       # 侧边栏分组显示
+    - navigation.top            # 启用“回到顶部”按钮
+    - navigation.tracking       # 滚动时自动更新 URL 锚点
+    - search.suggest            # 搜索框输入建议
+    - search.highlight          # 搜索结果高亮
+    - content.code.copy         # 代码块一键复制按钮
+    - content.code.annotate     # 允许在代码中添加注释说明
+
+  # 调色板 (Palette) - 支持深浅模式手动/自动切换
+  palette:
+    # 浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo           # 主题色（顶部栏）
+      accent: indigo            # 交互色（链接、按钮等）
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至浅色模式
+
+  # 字体设置
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# 4. 导航栏结构 (Navigation)
+nav:
+  - 首页: index.md
+  - 入门指南: 
+      - 环境搭建: guide/install.md
+      - 快速开始: guide/quickstart.md
+  - 进阶教程:
+      - 自动化部署: advanced/deploy.md
+      - 样式自定义: advanced/style.md
+  - 关于: about.md
+
+# 5. Markdown 增强扩展 (Extensions)
+markdown_extensions:
+  - admonition                  # 警告框/提示框 (!!! note)
+  - attr_list                   # 允许在 Markdown 中添加 CSS 类或属性
+  - md_in_html                  # 允许在 HTML 标签中写 Markdown
+  - pymdownx.details            # 折叠列表 (??? note)
+  - pymdownx.superfences        # 嵌套代码块支持
+  - pymdownx.tasklist:          # 任务列表支持 ( - [ ] )
+      custom_checkbox: true
+  - pymdownx.magiclink          # 自动识别 URL 为链接
+  - pymdownx.arithmatex:        # 数学公式支持 (MathJax)
+      generic: true
+  - pymdownx.highlight:         # 代码高亮
+      anchor_linenums: true
+      line_nums: true
+  - toc:
+      permalink: true           # 标题旁显示锚点链接
+
+# 6. 插件设置
+plugins:
+  - search:
+      lang: en, ja, zh          # 必须包含 zh 才能支持中文搜索
+
+# 7. 自定义社交链接 (显示在页脚)
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ryan1702
