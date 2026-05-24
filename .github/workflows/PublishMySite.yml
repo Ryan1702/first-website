@@ -1,22 +1,30 @@
 name: publish site
+
 # 触发条件
 on:
   push:
     branches:
       - main
+
+# 赋予 Actions 将生成的网页推送到 gh-pages 分支的写入权限
+permissions:
+  contents: write
+
 # workflow 的具体内容
 jobs:
   deploy:
-    # 创建一个 Ubuntu 容器
     runs-on: ubuntu-latest
     steps:
-      # 先打开 main 分支
-      - uses: actions/checkout@v2
-      # 再安装 Python 和相关环境
-      - uses: actions/setup-python@v2
+      # 先打开 main 分支 (升级为最新的 v4)
+      - uses: actions/checkout@v4
+      
+      # 再安装 Python 和相关环境 (升级为 v5，并锁死稳定的 3.12 版本)
+      - uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: '3.12'
+          
       # 使用包管理工具 pip 安装 mkdocs-material
       - run: pip install mkdocs-material
+      
       # 使用 mkdocs-material 构建网站并部署到 gh-pages 分支
       - run: mkdocs gh-deploy --force
