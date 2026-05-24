@@ -5,6 +5,11 @@ site_description: WYF的个人网站
 
 nav:
   - 首页: index.md
+  - 课内学习:
+    - 学习计划: 课内学习/课内.md
+  - 课外学习:
+    - 算法竞赛:
+      - 学习计划: 课外学习/plan.md
   - 关于我: about.md
 
 theme:
