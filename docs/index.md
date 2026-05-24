@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# 欢迎来到WYF的个人网站
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+> 由于个人隐私原因，不展示个人过多信息
 
-## Commands
+## 个人简介
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+本人目前大一
 
-## Project layout
+学校是厦门大学马来西亚分校
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+专业是计算机科学与技术
