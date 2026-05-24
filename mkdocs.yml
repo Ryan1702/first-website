@@ -9,7 +9,7 @@ nav:
     - 学习计划: in-school/plan.md
   - 课外学习:
     - 算法竞赛:
-      - 学习计划: out-school/plan.md
+      - 学习计划: out-school/algorithms/plan.md
   - 关于我: about.md
 
 theme:
