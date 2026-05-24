@@ -3,6 +3,10 @@ site_url: https://ryan1702.github.io/first-website/
 site_author: WYF
 site_description: WYF的个人网站
 
+nav:
+  - 首页: index.md
+  - 关于我: about.md
+
 theme:
   name: material
   language: zh
