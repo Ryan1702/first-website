@@ -6,7 +6,7 @@
 - [ ] 5.26 期中考
 - 范围：hapter 11-13
 ## 离散
-- [ ] 5.22 作业
+- [x] 5.22 作业
 - [ ] 5.29 期中考
 - 范围：Chapter 1, 2, 4 (Logic, Predicates, Rules of Inferences, Sets, Functions, Number Theory, up to and including: the Chinese Remainder Theorem)
 ## 反腐败
@@ -17,5 +17,5 @@
 - [ ] 6.29-7.3 Quiz
 - 范围：全部内容
 ## 编程实践
-- [ ] 5.25 Tutorial 2
+- [x] 5.25 Tutorial 2
 - [ ] 6.19 Assignment 1
