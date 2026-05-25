@@ -16,6 +16,7 @@ nav:
           - 高精度加法: out-school/algorithms/算法大全/高精度/加法.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
+        - 取石子: out-school/algorithms/题解/取石子.md
 
 theme:
   name: material
@@ -63,6 +64,7 @@ plugins:
   - tags
 
 markdown_extensions:
+  - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
   - attr_list
@@ -83,8 +85,13 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - footnotes
+  - pymdownx.betterem
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.emoji
 
-# 仅保留外链 CDN 支持数学公式，删除了不存在的本地文件
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
