@@ -18,6 +18,14 @@ nav:
           - 高精度乘法: out-school/algorithms/算法大全/高精度/乘法.md
           - 高精度除法（高精度除以低精度）: out-school/algorithms/算法大全/高精度/除法1.md
           - 高精度除法（高精度除以高精度）: out-school/algorithms/算法大全/高精度/除法2.md
+        - 排序算法:
+          - 冒泡排序: out-school/algorithms/算法大全/排序/冒泡排序.md
+          - 选择排序: out-school/algorithms/算法大全/排序/选择排序.md
+          - 插入排序: out-school/algorithms/算法大全/排序/插入排序.md
+          - 归并排序: out-school/algorithms/算法大全/排序/归并排序.md
+          - 快速排序: out-school/algorithms/算法大全/排序/快速排序.md
+          - 基数排序: out-school/algorithms/算法大全/排序/基数排序.md
+          - 堆排序: out-school/algorithms/算法大全/排序/堆排序.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
