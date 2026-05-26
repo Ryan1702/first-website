@@ -1,3 +1,6 @@
+# 区间DP
+
+``` c++
 #include<bits/stdc++.h>
 #define Maxn 80
 using namespace std;
@@ -47,3 +50,4 @@ int main()
     }
     print(ans);
 }
+```

@@ -30,6 +30,18 @@ nav:
           - 二分答案: out-school/algorithms/算法大全/二分/二分答案.md
         - 搜索:
           - 记忆化搜索: out-school/algorithms/算法大全/搜索/记忆化搜索.md
+        - DP:
+          - 背包问题:
+            - 01背包: out-school/algorithms/算法大全/DP/背包/01背包.md
+            - 01背包k优解: out-school/algorithms/算法大全/DP/背包/01背包k优解.md
+            - 01背包方案以及方案数: out-school/algorithms/算法大全/DP/背包/01背包方案以及方案数.md
+            - 01背包最优方案数: out-school/algorithms/算法大全/DP/背包/01背包最优方案数.md
+            - 完全背包: out-school/algorithms/算法大全/DP/背包/完全背包.md
+            - 多重背包: out-school/algorithms/算法大全/DP/背包/多重背包.md
+            - 多重背包单调队列优化: out-school/algorithms/算法大全/DP/背包/多重背包单调队列优化.md
+          - 其他:
+            - 区间DP: out-school/algorithms/算法大全/DP/区间DP.md
+            - 最长不下降子序列: out-school/algorithms/算法大全/DP/最长不下降子序列.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
