@@ -14,6 +14,10 @@ nav:
       - 算法大全:
         - 高精度:
           - 高精度加法: out-school/algorithms/算法大全/高精度/加法.md
+          - 高精度减法: out-school/algorithms/算法大全/高精度/减法.md
+          - 高精度乘法: out-school/algorithms/算法大全/高精度/乘法.md
+          - 高精度除法（高精度除以低精度）: out-school/algorithms/算法大全/高精度/除法1.md
+          - 高精度除法（高精度除以高精度）: out-school/algorithms/算法大全/高精度/除法2.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
