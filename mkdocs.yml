@@ -26,6 +26,10 @@ nav:
           - 快速排序: out-school/algorithms/算法大全/排序/快速排序.md
           - 基数排序: out-school/algorithms/算法大全/排序/基数排序.md
           - 堆排序: out-school/algorithms/算法大全/排序/堆排序.md
+        - 二分:
+          - 二分答案: out-school/algorithms/算法大全/二分/二分答案.md
+        - 搜索:
+          - 记忆化搜索: out-school/algorithms/算法大全/搜索/记忆化搜索.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
