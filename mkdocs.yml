@@ -33,6 +33,7 @@ nav:
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
+        - 老虎机: out-school/algorithms/题解/老虎机.md
 
 theme:
   name: material
