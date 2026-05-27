@@ -42,6 +42,14 @@ nav:
           - 其他:
             - 区间DP: out-school/algorithms/算法大全/DP/区间DP.md
             - 最长不下降子序列: out-school/algorithms/算法大全/DP/最长不下降子序列.md
+        - 字符串:
+          - 字符串哈希: out-school/algorithms/算法大全/字符串/字符串哈希.md
+          - KMP: out-school/algorithms/算法大全/字符串/KMP.md
+          - 扩展KMP: out-school/algorithms/算法大全/字符串/扩展KMP.md
+          - 马拉车算法: out-school/algorithms/算法大全/字符串/马拉车算法.md
+          - Trie: out-school/algorithms/算法大全/字符串/Trie.md
+          - Trie最大异或对: out-school/algorithms/算法大全/字符串/Trie最大异或对.md
+          - AC自动机: out-school/algorithms/算法大全/字符串/AC自动机.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md

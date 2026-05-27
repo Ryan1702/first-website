@@ -1,3 +1,6 @@
+# Trie最大异或对
+
+``` c++
 #include<bits/stdc++.h>
 #define Maxn 100000
 using namespace std;
@@ -44,3 +47,4 @@ int main()
     printf("%d\n",ans);
     return 0;
 }
+```

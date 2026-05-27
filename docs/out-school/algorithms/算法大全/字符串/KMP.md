@@ -1,3 +1,6 @@
+# KMP
+
+``` c++
 #include<bits/stdc++.h>
 #define Maxn 1000000
 using namespace std;
@@ -23,3 +26,4 @@ int main()
     for(int i=1;i<=m;i++) printf("%d ",nx[i]);
     return 0;
 }
+```

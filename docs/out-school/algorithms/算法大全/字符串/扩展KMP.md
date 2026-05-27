@@ -1,3 +1,6 @@
+# 扩展KMP
+
+``` c++
 #include<bits/stdc++.h>
 #define Maxn 20000000
 using namespace std;
@@ -27,3 +30,4 @@ int main()
     printf("%lld\n%lld\n",ans1,ans2);
     return 0;
 }
+```
