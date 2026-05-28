@@ -8,6 +8,9 @@ nav:
   - 个人介绍: about.md
   - 课内学习:
     - 学习计划: in-school/plan.md
+    - 大一下:
+      - 离散数学:
+        - 期中复习: in-school/大一下/离散数学/期中复习.md
   - 课外学习:
     - 算法竞赛:
       - 学习计划: out-school/algorithms/plan.md
