@@ -53,6 +53,15 @@ nav:
           - Trie: out-school/algorithms/算法大全/字符串/Trie.md
           - Trie最大异或对: out-school/algorithms/算法大全/字符串/Trie最大异或对.md
           - AC自动机: out-school/algorithms/算法大全/字符串/AC自动机.md
+        - 数据结构:
+          - ST表: out-school/algorithms/算法大全/数据结构/ST表.md
+          - 单调栈: out-school/algorithms/算法大全/数据结构/单调栈.md
+          - 单调队列: out-school/algorithms/算法大全/数据结构/单调队列.md
+          - 线段树: out-school/algorithms/算法大全/数据结构/线段树.md
+          - 树状数组点修区查: out-school/algorithms/算法大全/数据结构/树状数组点修区查.md
+          - 树状数组区修区查: out-school/algorithms/算法大全/数据结构/树状数组区修区查.md
+          - 树状数组区修点查: out-school/algorithms/算法大全/数据结构/树状数组区修点查.md
+          - 平衡树: out-school/algorithms/算法大全/数据结构/平衡树.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
