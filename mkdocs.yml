@@ -62,6 +62,25 @@ nav:
           - 树状数组区修区查: out-school/algorithms/算法大全/数据结构/树状数组区修区查.md
           - 树状数组区修点查: out-school/algorithms/算法大全/数据结构/树状数组区修点查.md
           - 平衡树: out-school/algorithms/算法大全/数据结构/平衡树.md
+        - 数学:
+          - 快速幂: out-school/algorithms/算法大全/数学/快速幂.md
+          - 矩阵快速幂: out-school/algorithms/算法大全/数学/矩阵快速幂.md
+          - 高斯消元: out-school/algorithms/算法大全/数学/高斯消元.md
+          - 线性筛: out-school/algorithms/算法大全/数学/线性筛.md
+          - 欧几里得算法求GCD: out-school/algorithms/算法大全/数学/欧几里得算法求GCD.md
+          - 扩展欧几里得: out-school/algorithms/算法大全/数学/扩展欧几里得.md
+          - 欧拉函数: out-school/algorithms/算法大全/数学/欧拉函数.md
+          - 欧拉定理: out-school/algorithms/算法大全/数学/欧拉定理.md
+          - 乘法逆元: out-school/algorithms/算法大全/数学/乘法逆元.md
+          - 中国剩余定理: out-school/algorithms/算法大全/数学/中国剩余定理.md
+          - 整除分块: out-school/algorithms/算法大全/数学/整除分块.md
+          - 组合数: out-school/algorithms/算法大全/数学/组合数.md
+          - 错位排列: out-school/algorithms/算法大全/数学/错位排列.md
+          - 康托展开: out-school/algorithms/算法大全/数学/康托展开.md
+          - 斯特林数: out-school/algorithms/算法大全/数学/斯特林数.md
+          - 卡特兰数: out-school/algorithms/算法大全/数学/卡特兰数.md
+          - 放球问题: out-school/algorithms/算法大全/数学/放球问题.md
+          - 卢卡斯定理: out-school/algorithms/算法大全/数学/卢卡斯定理.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
