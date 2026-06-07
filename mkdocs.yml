@@ -59,8 +59,8 @@ nav:
           - 单调队列: out-school/algorithms/算法大全/数据结构/单调队列.md
           - 线段树: out-school/algorithms/算法大全/数据结构/线段树.md
           - 树状数组点修区查: out-school/algorithms/算法大全/数据结构/树状数组点修区查.md
-          - 树状数组区修区查: out-school/algorithms/算法大全/数据结构/树状数组区修区查.md
           - 树状数组区修点查: out-school/algorithms/算法大全/数据结构/树状数组区修点查.md
+          - 树状数组区修区查: out-school/algorithms/算法大全/数据结构/树状数组区修区查.md
           - 平衡树: out-school/algorithms/算法大全/数据结构/平衡树.md
         - 数学:
           - 快速幂: out-school/algorithms/算法大全/数学/快速幂.md
