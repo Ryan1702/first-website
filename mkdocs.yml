@@ -81,6 +81,56 @@ nav:
           - 卡特兰数: out-school/algorithms/算法大全/数学/卡特兰数.md
           - 放球问题: out-school/algorithms/算法大全/数学/放球问题.md
           - 卢卡斯定理: out-school/algorithms/算法大全/数学/卢卡斯定理.md
+        - 图论:
+          - 树上问题:
+            - 树的直径: out-school/algorithms/算法大全/图论/树的直径.md
+            - 树的中心: out-school/algorithms/算法大全/图论/树的中心.md
+            - 树的重心:
+              - DFS: out-school/algorithms/算法大全/图论/树的重心DFS.md
+              - 换根DP: out-school/algorithms/算法大全/图论/树的重心换根DP.md
+            - 最小生成树:
+              - Kruskal: out-school/algorithms/算法大全/图论/Kruskal.md
+              - Prim: out-school/algorithms/算法大全/图论/Prim.md
+            - 树上启发式合并: out-school/algorithms/算法大全/图论/树上启发式合并.md
+            - 树上启发式合并2: out-school/algorithms/算法大全/图论/树上启发式合并2.md
+            - 最近公共祖先:
+              - LCA倍增算法: out-school/algorithms/算法大全/图论/LCA倍增算法.md
+              - LCA树链剖分: out-school/algorithms/算法大全/图论/LCA树链剖分.md
+              - LCA的RMQ算法: out-school/algorithms/算法大全/图论/LCA的RMQ算法.md
+              - LCA的Tarjan算法: out-school/algorithms/算法大全/图论/LCA的Tarjan算法.md
+            - 树链剖分:
+              - 重链剖分: out-school/algorithms/算法大全/图论/重链剖分.md
+              - 长链剖分: out-school/algorithms/算法大全/图论/长链剖分.md
+          - 图上问题:
+            - 图的存储: out-school/algorithms/算法大全/图论/图的存储.md
+            - 最短路算法:
+              - Floyd: out-school/algorithms/算法大全/图论/Floyd.md
+              - Dijkstra: out-school/algorithms/算法大全/图论/Dijkstra.md
+              - Bellman-ford: out-school/algorithms/算法大全/图论/Bellman-ford.md
+              - SPFA: out-school/algorithms/算法大全/图论/SPFA.md
+              - Johnson: out-school/algorithms/算法大全/图论/Johnson.md
+            - 2-SAT: out-school/algorithms/算法大全/图论/2-SAT.md
+            - 二分图:
+              - 二分图判定: out-school/algorithms/算法大全/图论/二分图判定.md
+              - 二分图最大匹配: out-school/algorithms/算法大全/图论/二分图最大匹配.md
+              - 二分图最大匹配网络流解法: out-school/algorithms/算法大全/图论/二分图最大匹配网络流解法.md
+              - 二分图最大权完美匹配DFS: out-school/algorithms/算法大全/图论/二分图最大权完美匹配DFS.md
+              - 二分图最大权完美匹配BFS: out-school/algorithms/算法大全/图论/二分图最大权完美匹配BFS.md
+            - Tarjan算法:
+              - 强连通分量: out-school/algorithms/算法大全/图论/强连通分量.md
+              - 割点: out-school/algorithms/算法大全/图论/割点.md
+              - 割边: out-school/algorithms/算法大全/图论/割边.md
+              - 点双连通分量: out-school/algorithms/算法大全/图论/点双连通分量.md
+              - 边双连通分量: out-school/algorithms/算法大全/图论/边双连通分量.md
+            - 圆方树: out-school/algorithms/算法大全/图论/圆方树.md
+            - 基环树: out-school/algorithms/算法大全/图论/基环树.md
+            - 拓扑排序: out-school/algorithms/算法大全/图论/拓扑排序.md
+            - 网络流:
+              - 最大流Dinic算法: out-school/algorithms/算法大全/图论/最大流Dinic算法.md
+              - 最大流EK算法: out-school/algorithms/算法大全/图论/最大流EK算法.md
+              - 最小割Dinic算法: out-school/algorithms/算法大全/图论/最小割Dinic算法.md
+              - 费用流EK算法: out-school/algorithms/算法大全/图论/费用流EK算法.md
+            - 欧拉回路: out-school/algorithms/算法大全/图论/欧拉回路.md
       - 题解:
         - 企鹅: out-school/algorithms/题解/企鹅.md
         - 取石子: out-school/algorithms/题解/取石子.md
