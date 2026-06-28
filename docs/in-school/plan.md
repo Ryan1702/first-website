@@ -12,7 +12,7 @@
 - [x] 5.22 作业
 - [x] 5.29 期中考
 - 范围：Chapter 1, 2, 4 (Logic, Predicates, Rules of Inferences, Sets, Functions, Number Theory, up to and including: the Chinese Remainder Theorem)
-- [ ] 7.3 Assignment 2
+- [x] 7.3 Assignment 2
 ## 反腐败
 - [x] 6.4 视频作业
 - [x] 6.12 个人PPT
