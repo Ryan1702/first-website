@@ -28,3 +28,5 @@
 - [x] 6.27 Tutorial 3
 - [ ] 7.17 Assignment 2
 - [ ] 7.17 Presentation
+## 社区服务
+- [ ] 7.3 Individual Reflective Journal
