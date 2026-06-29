@@ -26,6 +26,7 @@
 - [x] 5.25 Tutorial 2
 - [x] 6.19 Assignment 1
 - [x] 6.27 Tutorial 3
+- [ ] 7.6 Tutorial 4
 - [ ] 7.17 Assignment 2
 - [ ] 7.17 Presentation
 ## 社区服务
