@@ -7,6 +7,7 @@ nav:
   - 首页: index.md
   - 个人介绍: about.md
   - 课内学习:
+    - 简介: in-school/index.md
     - 学习计划: in-school/plan.md
     - 大一下:
       - 离散数学:
@@ -16,6 +17,7 @@ nav:
       - 专业写作:
         - 小测复习: in-school/大一下/专业写作/小测复习.md
   - 课外学习:
+    - 简介: out-school/index.md
     - 算法竞赛:
       - 学习计划: out-school/algorithms/plan.md
       - 算法大全:
