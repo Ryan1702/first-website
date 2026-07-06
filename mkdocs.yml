@@ -16,6 +16,10 @@ nav:
         - 小测复习: in-school/大一下/反腐败/小测复习.md
       - 专业写作:
         - 小测复习: in-school/大一下/专业写作/小测复习.md
+      - 编程实践:
+        - 链表:
+          - SLL单向链表: in-school/大一下/编程实践/链表/SLL单向链表.md
+          - DLL双向链表: in-school/大一下/编程实践/链表/DLL双向链表.md
   - 课外学习:
     - 简介: out-school/index.md
     - 算法竞赛:
