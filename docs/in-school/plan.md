@@ -2,11 +2,11 @@
 ## 物理
 - [x] 5.20 期中考
 - 范围：1a-2c
-- [ ] 时间未知 Quiz 3
+- [x] 时间未知 Quiz 3
 ## 微积分
 - [x] 5.26 期中考
 - 范围：chapter 11-13
-- [ ] 6.30 Quiz 4
+- [x] 6.30 Quiz 4
 - [ ] 7.10 Assignment 1
 ## 离散
 - [x] 5.22 作业
@@ -20,14 +20,14 @@
 - [x] 6.26 Quiz
 ## 专业写作
 - [x] 6.19 小组项目
-- [ ] 7.2 Quiz
+- [x] 7.2 Quiz
 - 范围：全部内容
 ## 编程实践
 - [x] 5.25 Tutorial 2
 - [x] 6.19 Assignment 1
 - [x] 6.27 Tutorial 3
-- [ ] 7.6 Tutorial 4
+- [x] 7.6 Tutorial 4
 - [ ] 7.17 Assignment 2
 - [ ] 7.17 Presentation
 ## 社区服务
-- [ ] 7.3 Individual Reflective Journal
+- [x] 7.3 Individual Reflective Journal
