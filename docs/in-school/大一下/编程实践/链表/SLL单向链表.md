@@ -34,7 +34,11 @@ void insertAtEnd(Node** head,int value)
 }
 void insertAtPosition(Node** head,int value,int position)
 {
-    if(position==1) insertAtBeginning(head,value);
+    if(position==1)
+    {
+        insertAtBeginning(head,value);
+        return ;
+    }
     Node* newnode=(Node*)malloc(sizeof(Node));
     newnode->data=value;
     Node* temp=*head;
@@ -92,6 +96,11 @@ void deleteAtPosition(Node** head,int position)
     {
         prev=temp;
         temp=temp->next;
+    }
+    if(temp==NULL)
+    {
+        printf("Position out of range\n");
+        return ;
     }
     prev->next=temp->next;
     free(temp);
