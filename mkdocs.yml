@@ -20,6 +20,9 @@ nav:
         - 链表:
           - SLL单向链表: in-school/大一下/编程实践/链表/SLL单向链表.md
           - DLL双向链表: in-school/大一下/编程实践/链表/DLL双向链表.md
+        - 栈:
+          - 数组实现栈: in-school/大一下/编程实践/栈/数组实现栈.md
+          - 链表实现栈: in-school/大一下/编程实践/栈/链表实现栈.md
   - 课外学习:
     - 简介: out-school/index.md
     - 算法竞赛:
