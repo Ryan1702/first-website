@@ -1,0 +1,25 @@
+body {
+    background-image: url("../img/2.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+[data-md-color-scheme="default"] .md-container {
+    background-color: rgba(255, 255, 255, 0.82) !important;
+}
+
+[data-md-color-scheme="slate"] .md-container {
+    background-color: rgba(22, 27, 34, 0.75) !important;
+}
+
+.md-nav__title {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-nav__link {
+  background: transparent !important;
+  box-shadow: none !important;
+}
