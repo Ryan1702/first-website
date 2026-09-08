@@ -1,3 +1,4 @@
+/* ----- 您的原始背景设置（完全保留） ----- */
 body {
     background-image: url("../img/2.jpg") !important;
     background-size: cover !important;
@@ -9,17 +10,31 @@ body {
 [data-md-color-scheme="default"] .md-container {
     background-color: rgba(255, 255, 255, 0.82) !important;
 }
-
 [data-md-color-scheme="slate"] .md-container {
     background-color: rgba(22, 27, 34, 0.75) !important;
 }
 
-.md-nav__title {
-  background: transparent !important;
-  box-shadow: none !important;
+/* ----- 取消左侧导航章节标题的固定定位 ----- */
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+    position: static !important;   /* 移除 sticky 固定 */
+    top: auto !important;
+    transform: none !important;
+    background: transparent !important;  /* 透出图片，可保留半透明 */
+    box-shadow: none !important;
+    /* 不修改 padding、字体大小，保持原有高度 */
 }
 
-.md-nav__link {
-  background: transparent !important;
-  box-shadow: none !important;
+/* 同时兼容可能的 .md-nav__title 固定（以防万一） */
+.md-sidebar--primary .md-nav__title {
+    position: static !important;
+    top: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 确保右侧目录不受影响（还原透明背景） */
+.md-sidebar--secondary .md-nav__title,
+.md-sidebar--secondary .md-nav__item--section > .md-nav__link {
+    background: transparent !important;
+    box-shadow: none !important;
 }

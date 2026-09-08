@@ -25,6 +25,24 @@ nav:
           - 链表实现栈: in-school/大一下/编程实践/栈/链表实现栈.md
   - 课外学习:
     - 简介: out-school/index.md
+    - C++基础:
+      - 简单输出: out-school/C++/01简单输出.md
+      - 数据类型介绍: out-school/C++/02数据类型介绍.md
+      - 输入输出C风格: out-school/C++/03-1输入输出C风格.md
+      - 输入输出C++风格: out-school/C++/03-2输入输出C++风格.md
+      - 常量: out-school/C++/04常量.md
+      - 作用域: out-school/C++/05作用域.md
+      - 自加和自减运算符: out-school/C++/06自加和自减运算符.md
+      - 条件语句与逻辑判断: out-school/C++/07条件语句与逻辑判断.md
+      - 位运算与三目运算符: out-school/C++/08位运算与三目运算符.md
+      - 循环语句: out-school/C++/09循环语句.md
+      - 一维数组与二维数组: out-school/C++/10一维数组与二维数组.md
+      - 函数与数学函数: out-school/C++/11函数与数学函数.md
+      - 简单递归函数: out-school/C++/12简单递归函数.md
+      - 字符数组: out-school/C++/13字符数组.md
+      - 字符串: out-school/C++/14字符串.md
+      - 结构体: out-school/C++/15结构体.md
+      - 练习题1: out-school/C++/练习题1.md
     - 算法竞赛:
       - 学习计划: out-school/algorithms/plan.md
       - 算法大全:
