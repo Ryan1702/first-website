@@ -14,27 +14,38 @@ body {
     background-color: rgba(22, 27, 34, 0.75) !important;
 }
 
-/* ----- 取消左侧导航章节标题的固定定位 ----- */
-.md-sidebar--primary .md-nav__item--section > .md-nav__link {
-    position: static !important;   /* 移除 sticky 固定 */
+/* ----- 强制左侧导航所有标题背景透明，取消固定 ----- */
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav_title,
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__link.md-nav__link--active {  /* 针对“课外学习”类名 */
+    position: static !important;           /* 取消 sticky 固定 */
     top: auto !important;
     transform: none !important;
-    background: transparent !important;  /* 透出图片，可保留半透明 */
-    box-shadow: none !important;
-    /* 不修改 padding、字体大小，保持原有高度 */
-}
-
-/* 同时兼容可能的 .md-nav__title 固定（以防万一） */
-.md-sidebar--primary .md-nav__title {
-    position: static !important;
-    top: auto !important;
+    /* 强制背景透明，覆盖所有背景相关属性 */
     background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
     box-shadow: none !important;
+    /* 不修改尺寸、内边距、字体大小，保持原有高度 */
 }
 
-/* 确保右侧目录不受影响（还原透明背景） */
+/* 深色主题下同样透明（主题切换时可能会添加背景，我们强制覆盖） */
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav_title,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link.md-nav__link--active {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 确保右侧目录保持原样（透明背景） */
 .md-sidebar--secondary .md-nav__title,
+.md-sidebar--secondary .md-nav_title,
 .md-sidebar--secondary .md-nav__item--section > .md-nav__link {
     background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
     box-shadow: none !important;
 }
