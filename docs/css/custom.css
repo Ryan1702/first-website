@@ -49,3 +49,49 @@ body {
     background-image: none !important;
     box-shadow: none !important;
 }
+
+/* ----- 右侧目录：标题和子标题背景透明 + 取消固定 ----- */
+
+/* 1. 取消右侧边栏内部容器的 sticky */
+.md-sidebar--secondary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-sidebar__inner {
+    position: static !important;
+    top: auto !important;
+}
+
+/* 2. 右侧目录所有标题、子标题、激活项：透明 + 取消 sticky */
+.md-sidebar--secondary .md-nav__title,
+.md-sidebar--secondary .md-nav_title,
+.md-sidebar--secondary .md-nav--secondary .md-nav__title,
+.md-sidebar--secondary .md-nav__item--section > .md-nav__link,
+.md-sidebar--secondary .md-nav__link,
+.md-sidebar--secondary .md-nav__link.md-nav__link--active {
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. 深色主题同样处理 */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-sidebar__scrollwrap,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-sidebar__inner {
+    position: static !important;
+    top: auto !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav_title,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav--secondary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link.md-nav__link--active {
+    position: static !important;
+    top: auto !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
