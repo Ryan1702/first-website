@@ -26,6 +26,7 @@ nav:
   - 课外学习:
     - 简介: out-school/index.md
     - C++基础:
+      - 优先级顺序: out-school/C++/优先级顺序.md
       - 简单输出: out-school/C++/01简单输出.md
       - 数据类型介绍: out-school/C++/02数据类型介绍.md
       - 输入输出C风格: out-school/C++/03-1输入输出C风格.md
