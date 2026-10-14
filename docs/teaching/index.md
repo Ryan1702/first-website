@@ -10,4 +10,6 @@
 - [DFS](DFS.pdf)
 - [BFS](BFS.pdf)
 - [基础DP](基础DP.pdf)
+- [背包DP](背包DP.pdf)
+- [区间DP](区间DP.pdf)
 - [中等数学](中等数学.pdf)
