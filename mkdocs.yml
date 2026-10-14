@@ -6,6 +6,8 @@ site_description: WYF的个人网站
 nav:
   - 首页: index.md
   - 个人介绍: about.md
+  - 基础算法:
+    - 简介: teaching/index.md
   - 课内学习:
     - 简介: in-school/index.md
     - 学习计划: in-school/plan.md

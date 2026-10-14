@@ -1,0 +1,17 @@
+# 忽略 logo 文件夹
+logo/
+
+# 忽略 LaTeX 源文件和编译过程文件
+*.tex
+*.synctex.gz
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+
+# 忽略其他不想上传的文件
+*.cpp
+GUIDE.md
+*.sty
