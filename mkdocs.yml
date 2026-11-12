@@ -197,7 +197,6 @@ theme:
     - navigation.tabs      # 使用 Tab 分类
     - navigation.top       # 返回顶部按钮
     - navigation.indexes   # 点击 Tab 可直接打开说明页
-    - navigation.footer    # 页面底部显示上一页 / 下一页
     - search.suggest       # 搜索补全
     - search.highlight     # 搜索高亮
     - content.code.copy    # 代码一键复制
