@@ -175,6 +175,9 @@ nav:
 theme:
   name: material
   language: zh
+  custom_dir: overrides      # 自定义 404 页面模板
+  logo: img/logo.png
+  favicon: img/favicon.png
   palette:
     # 日间模式
     - scheme: default
@@ -194,6 +197,7 @@ theme:
     - navigation.tabs      # 使用 Tab 分类
     - navigation.top       # 返回顶部按钮
     - navigation.indexes   # 点击 Tab 可直接打开说明页
+    - navigation.footer    # 页面底部显示上一页 / 下一页
     - search.suggest       # 搜索补全
     - search.highlight     # 搜索高亮
     - content.code.copy    # 代码一键复制
@@ -204,7 +208,7 @@ theme:
 edit_uri: edit/main/docs/
 repo_url: https://github.com/ryan1702/first-website/
 repo_name: first-website
-copyright: 吴悠凡 CC-BY-4.0
+copyright: Copyright &copy; 2026 吴悠凡 · 内容 CC BY 4.0 · 代码 MIT
 
 extra:
   social:
@@ -244,7 +248,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.caret
   - pymdownx.keys
-  - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js

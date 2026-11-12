@@ -8,10 +8,10 @@ body {
 }
 
 [data-md-color-scheme="default"] .md-container {
-    background-color: rgba(255, 255, 255, 0.82) !important;
+    background-color: rgba(255, 255, 255, 0.93) !important;
 }
 [data-md-color-scheme="slate"] .md-container {
-    background-color: rgba(22, 27, 34, 0.75) !important;
+    background-color: rgba(22, 27, 34, 0.88) !important;
 }
 
 /* ----- 强制左侧导航所有标题背景透明，取消固定 ----- */
@@ -94,4 +94,40 @@ body {
     background-color: transparent !important;
     background-image: none !important;
     box-shadow: none !important;
+}
+/* ----- 首页卡片导航（grid cards）----- */
+.md-typeset .grid.cards > ul > li {
+    background-color: #ffffff;
+    border: 1px solid rgba(63, 81, 181, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(63, 81, 181, 0.18);
+    border-color: rgba(63, 81, 181, 0.38);
+}
+
+/* 卡片里的“进入”链接加强一点 */
+.md-typeset .grid.cards > ul > li > p:last-child a {
+    font-weight: 600;
+}
+
+/* 深色模式下的卡片 */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.26);
+}
+
+/* ----- 404 页面按钮排版 ----- */
+.md-typeset .md-button {
+    margin: 4px 6px 4px 0;
 }
