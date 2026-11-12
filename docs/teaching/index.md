@@ -4,125 +4,139 @@
 
 ## 刷题合集
 
-### Day 1
+按天推进，一天一个知识点，先看当天主题，再按顺序刷题。
+
+### Day 1：模拟
 
 1. [P1563 玩具谜题](https://www.luogu.com.cn/problem/P1563?utm_source=chatgpt.com)
 2. [P2670 扫雷游戏](https://www.luogu.com.cn/problem/P2670?utm_source=chatgpt.com)
 
-### Day 2
+### Day 2：二维数组与图形构造
 
 1. [P5731 蛇形方阵](https://www.luogu.com.cn/problem/P5731?utm_source=chatgpt.com)
 2. [P2615 神奇的幻方](https://www.luogu.com.cn/problem/P2615?utm_source=chatgpt.com)
 
-### Day 3
+### Day 3：模拟与计数
 
 1. [P1042 乒乓球](https://www.luogu.com.cn/problem/P1042?utm_source=chatgpt.com)
 2. [P1089 津津的储蓄计划](https://www.luogu.com.cn/problem/P1089?utm_source=chatgpt.com)
 3. [P5707 上学迟到](https://www.luogu.com.cn/problem/P5707?utm_source=chatgpt.com)
 4. [P1996 约瑟夫问题](https://www.luogu.com.cn/problem/P1996?utm_source=chatgpt.com)
 
-### Day 4
+### Day 4：字符与桶计数
 
 1. [P1914 小书童——凯撒密码](https://www.luogu.com.cn/problem/P1914?utm_source=chatgpt.com)
 2. [P1125 笨小猴](https://www.luogu.com.cn/problem/P1125?utm_source=chatgpt.com)
 3. [P1957 口算练习题](https://www.luogu.com.cn/problem/P1957?utm_source=chatgpt.com)
 
-### Day 5
+### Day 5：字符串处理
 
 1. [P1308 统计单词数](https://www.luogu.com.cn/problem/P1308?utm_source=chatgpt.com)
 2. [P5734 文字处理软件](https://www.luogu.com.cn/problem/P5734?utm_source=chatgpt.com)
 3. [P1597 语句解析](https://www.luogu.com.cn/problem/P1597?utm_source=chatgpt.com)
 
-### Day 6
+### Day 6：数位与进制
 
 1. [P1307 数字反转](https://www.luogu.com.cn/problem/P1307?utm_source=chatgpt.com)
 2. [P1980 计数问题](https://www.luogu.com.cn/problem/P1980?utm_source=chatgpt.com)
 3. [P1143 进制转换](https://www.luogu.com.cn/problem/P1143?utm_source=chatgpt.com)
 4. [P1100 高低位交换](https://www.luogu.com.cn/problem/P1100?utm_source=chatgpt.com)
 
-### Day 7
+### Day 7：枚举与递推
 
 1. [P1618 三连击（升级版）](https://www.luogu.com.cn/problem/P1618?utm_source=chatgpt.com)
 2. [P1028 数的计算](https://www.luogu.com.cn/problem/P1028?utm_source=chatgpt.com)
 3. [P5736 质数筛](https://www.luogu.com.cn/problem/P5736?utm_source=chatgpt.com)
 4. [P1029 最大公约数和最小公倍数问题](https://www.luogu.com.cn/problem/P1029?utm_source=chatgpt.com)
 
-### Day 8
+### Day 8：DFS 回溯与记忆化
 
 1. [P1706 全排列问题](https://www.luogu.com.cn/problem/P1706?utm_source=chatgpt.com)
 2. [P1036 选数](https://www.luogu.com.cn/problem/P1036?utm_source=chatgpt.com)
 3. [P1075 质因数分解](https://www.luogu.com.cn/problem/P1075?utm_source=chatgpt.com)
 4. [P1434 滑雪](https://www.luogu.com.cn/problem/P1434?utm_source=chatgpt.com)（进阶选做）
 
-### Day 9
+### Day 9：排序与去重
 
 1. [P1059 明明的随机数](https://www.luogu.com.cn/problem/P1059?utm_source=chatgpt.com)
 2. [P1093 奖学金](https://www.luogu.com.cn/problem/P1093?utm_source=chatgpt.com)
 3. [P5266 学籍管理](https://www.luogu.com.cn/problem/P5266?utm_source=chatgpt.com)
 4. [P5717 三角形分类](https://www.luogu.com.cn/problem/P5717?utm_source=chatgpt.com)
 
-### Day 10
+### Day 10：贪心
 
 1. [P1223 排队接水](https://www.luogu.com.cn/problem/P1223?utm_source=chatgpt.com)
 2. [P1208 混合牛奶](https://www.luogu.com.cn/problem/P1208?utm_source=chatgpt.com)
 3. [P1803 凌乱的yyy / 线段覆盖](https://www.luogu.com.cn/problem/P1803?utm_source=chatgpt.com)
 
-### Day 11
+### Day 11：贪心与堆
 
 1. [P1090 合并果子](https://www.luogu.com.cn/problem/P1090?utm_source=chatgpt.com)
 2. [P5250 木材仓库](https://www.luogu.com.cn/problem/P5250?utm_source=chatgpt.com)
 
-### Day 12
+### Day 12：二分查找与快速幂
 
 1. [P2249 查找](https://www.luogu.com.cn/problem/P2249?utm_source=chatgpt.com)
 2. [P1873 砍树](https://www.luogu.com.cn/problem/P1873?utm_source=chatgpt.com)
 3. [P1226 快速幂](https://www.luogu.com.cn/problem/P1226?utm_source=chatgpt.com)
 
-### Day 13
+### Day 13：二分答案
 
-1\. [P1577 切绳子](https://www.luogu.com.cn/problem/P1577?utm_source=chatgpt.com)
+1. [P1577 切绳子](https://www.luogu.com.cn/problem/P1577?utm_source=chatgpt.com)
 
-### Day 14
+### Day 14：前缀和
 
 1. [P8218 求区间和](https://www.luogu.com.cn/problem/P8218?utm_source=chatgpt.com)
 2. [P2004 领地选择](https://www.luogu.com.cn/problem/P2004?utm_source=chatgpt.com)
 3. [P1115 最大子段和](https://www.luogu.com.cn/problem/P1115?utm_source=chatgpt.com)
 
-### Day 15
+### Day 15：差分
 
 1. [P2367 语文成绩](https://www.luogu.com.cn/problem/P2367?utm_source=chatgpt.com)
 2. [P3397 地毯](https://www.luogu.com.cn/problem/P3397?utm_source=chatgpt.com)
 
-### Day 16
+### Day 16：排序与二分查找
 
 1. [P1102 A-B 数对](https://www.luogu.com.cn/problem/P1102?utm_source=chatgpt.com)
-2. [P1638 逛画展](https://www.luogu.com.cn/problem/P1638?utm_source=chatgpt.com)
 
-### Day 17
+### Day 17：双指针（滑动窗口）
+
+1. [P1638 逛画展](https://www.luogu.com.cn/problem/P1638?utm_source=chatgpt.com)
+
+### Day 18：单调栈
 
 1. [P5788 单调栈](https://www.luogu.com.cn/problem/P5788?utm_source=chatgpt.com)
-2. [P1886 滑动窗口](https://www.luogu.com.cn/problem/P1886?utm_source=chatgpt.com)
-3. [P1540 机器翻译](https://www.luogu.com.cn/problem/P1540?utm_source=chatgpt.com)
 
-### Day 18
+### Day 19：单调队列
+
+1. [P1886 滑动窗口](https://www.luogu.com.cn/problem/P1886?utm_source=chatgpt.com)
+
+### Day 20：队列模拟
+
+1. [P1540 机器翻译](https://www.luogu.com.cn/problem/P1540?utm_source=chatgpt.com)
+
+### Day 21：BFS 与连通块
 
 1. [P1443 马的遍历](https://www.luogu.com.cn/problem/P1443?utm_source=chatgpt.com)
 2. [P1596 Lake Counting](https://www.luogu.com.cn/problem/P1596?utm_source=chatgpt.com)
 3. [P5318 查找文献](https://www.luogu.com.cn/problem/P5318?utm_source=chatgpt.com)
 
-### Day 19
+### Day 22：并查集
 
 1. [P3367 并查集](https://www.luogu.com.cn/problem/P3367?utm_source=chatgpt.com)
-2. [P1111 修复公路](https://www.luogu.com.cn/problem/P1111?utm_source=chatgpt.com)
 
-### Day 20
+### Day 23：最小生成树
+
+1. [P1111 修复公路](https://www.luogu.com.cn/problem/P1111?utm_source=chatgpt.com)
+
+### Day 24：栈与链表
 
 1. [P1739 表达式括号匹配](https://www.luogu.com.cn/problem/P1739?utm_source=chatgpt.com)
 2. [P1449 后缀表达式](https://www.luogu.com.cn/problem/P1449?utm_source=chatgpt.com)
 3. [P1160 队列安排](https://www.luogu.com.cn/problem/P1160?utm_source=chatgpt.com)
 4. [UVA11988 破损的键盘](https://www.luogu.com.cn/problem/UVA11988?utm_source=chatgpt.com)
 
-### Day 21
+### Day 25：动态规划入门
 
 1. [P1048 采药](https://www.luogu.com.cn/problem/P1048?utm_source=chatgpt.com)
 2. [P1352 没有上司的舞会](https://www.luogu.com.cn/problem/P1352?utm_source=chatgpt.com)（进阶选做）
