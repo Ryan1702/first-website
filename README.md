@@ -96,16 +96,6 @@ git push origin main   # 推送后自动触发 Actions → gh-pages
 | 文字内容、笔记、讲义 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) —— 转载请注明出处 |
 | 站点代码与配置 | [MIT](./LICENSE) |
 
-## 🐰 关于这只玉桂狗
-
-<img src="./docs/img/1.jpg" width="170" align="right" alt="Cinnamoroll" />
-
-站点的吉祥物，也是背景图与 Logo 的来源。它出现在首页、404 页面和浏览器标签页里。
-
-> 玉桂狗尊嘟很可爱啊啊啊 —— 详见 [个人介绍](https://ryan1702.github.io/first-website/about/)
-
-<br clear="right" />
-
 ---
 
 <div align="center">

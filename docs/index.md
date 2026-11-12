@@ -37,9 +37,3 @@
     [:octicons-arrow-right-24: 进入](about.md)
 
 </div>
-
----
-
-<img src="img/1.jpg" width="200" alt="Cinnamoroll" />
-
-玉桂狗尊嘟很可爱啊啊啊
