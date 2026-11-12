@@ -1,0 +1,55 @@
+# ===== 系统文件 =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.\#*
+
+# ===== Python（MkDocs 本地构建）=====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# ===== MkDocs 构建产物 =====
+site/
+.cache/
+
+# ===== LaTeX 编译中间文件（teaching 下的 PDF 要保留，只忽略中间产物）=====
+*.aux
+*.log
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# ===== 编译出的可执行文件 / 目标文件 =====
+*.o
+*.obj
+*.exe
+*.out
+*.class
+a.out
+
+# ===== 临时文件 =====
+*.tmp
+*.bak
+*.orig
