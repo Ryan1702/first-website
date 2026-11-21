@@ -131,3 +131,13 @@ body {
 .md-typeset .md-button {
     margin: 4px 6px 4px 0;
 }
+
+/* ----- 表格占满内容宽度，避免窄表格靠左留白 ----- */
+.md-typeset__table {
+    display: block;
+    width: 100%;
+}
+.md-typeset table:not([class]) {
+    display: table;
+    width: 100%;
+}
