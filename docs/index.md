@@ -16,7 +16,7 @@
 
     ---
 
-    C++ 基础 17 篇、算法大全 90+ 篇、题解 5 篇
+    C++ 基础、算法大全、题解
 
     [:octicons-arrow-right-24: 进入](out-school/index.md)
 
@@ -24,7 +24,7 @@
 
     ---
 
-    24 讲 PDF 讲义、洛谷 21 天刷题计划（60 题）
+    PDF 讲义、洛谷刷题合集、历年考题
 
     [:octicons-arrow-right-24: 进入](teaching/index.md)
 
