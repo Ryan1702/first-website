@@ -1,6 +1,6 @@
 # 欢迎来到我的站点
 
-这里是吴悠凡（WYF）的个人学习站点，收录课内笔记、算法学习记录与教学讲义。
+这里是吴悠凡（WYF）的个人学习站点，收录课内笔记、算法学习记录与教学资料。
 
 <div class="grid cards" markdown>
 
@@ -24,7 +24,7 @@
 
     ---
 
-    PDF 讲义、洛谷刷题合集、历年考题
+    PDF 讲义、PPT 课件、刷题合集、历年考题
 
     [:octicons-arrow-right-24: 进入](teaching/index.md)
 
