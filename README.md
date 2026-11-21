@@ -32,7 +32,7 @@
 | **课内学习** | 学习计划、离散数学、反腐败、专业写作、链表与栈笔记 | [进入](https://ryan1702.github.io/first-website/in-school/) |
 | **课外学习** | C++ 基础、算法大全、题解 | [进入](https://ryan1702.github.io/first-website/out-school/) |
 | **教学资料** | PDF 讲义、PPT 课件、刷题合集、历年考题 | [进入](https://ryan1702.github.io/first-website/teaching/) |
-| **个人介绍** | 学习经历、专业技能、竞赛奖项 | [进入](https://ryan1702.github.io/first-website/about/) |
+| **个人介绍** | 学习经历、专业技能、竞赛奖项、个人喜好 | [进入](https://ryan1702.github.io/first-website/about/) |
 
 ## 🛠 技术栈
 

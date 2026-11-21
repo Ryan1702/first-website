@@ -141,3 +141,23 @@ body {
     display: table;
     width: 100%;
 }
+
+/* ----- 个人介绍页：导语与奖项表 ----- */
+.md-typeset .lead {
+    font-size: 1.02rem;
+    color: var(--md-default-fg-color--light);
+    line-height: 1.7;
+}
+
+.md-typeset .awards table {
+    table-layout: fixed;
+}
+.md-typeset .awards table th:first-child,
+.md-typeset .awards table td:first-child {
+    width: 64%;
+}
+.md-typeset .awards table th:last-child,
+.md-typeset .awards table td:last-child {
+    width: 36%;
+    text-align: center;
+}
