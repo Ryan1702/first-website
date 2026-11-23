@@ -118,6 +118,46 @@
 2. [P1596 Lake Counting](https://www.luogu.com.cn/problem/P1596)
 3. [P5318 查找文献](https://www.luogu.com.cn/problem/P5318)
 
+### Dayday after dayday
+
+#### 1. 表达式与化学式解析
+
+- [P1981 表达式求值](https://www.luogu.com.cn/problem/P1981)
+- [P1449 后缀表达式](https://www.luogu.com.cn/problem/P1449)
+
+#### 2. 树的基础
+
+- [P1305 新二叉树](https://www.luogu.com.cn/problem/P1305)
+- [P1030 求先序排列](https://www.luogu.com.cn/problem/P1030)
+
+#### 3. 最长上升子序列
+
+- [P1020 导弹拦截](https://www.luogu.com.cn/problem/P1020)
+- [P1091 合唱队形](https://www.luogu.com.cn/problem/P1091)
+
+#### 4. 二进制与位运算思维
+
+- [P5657 格雷码](https://www.luogu.com.cn/problem/P5657)
+- [P1100 高低位交换](https://www.luogu.com.cn/problem/P1100)
+
+#### 5. 链表进阶
+
+- [P1160 队列安排](https://www.luogu.com.cn/problem/P1160)
+
+#### 6. 浮点二分与数值求根
+
+- [P1024 一元三次方程求解](https://www.luogu.com.cn/problem/P1024)
+- [P1577 切绳子](https://www.luogu.com.cn/problem/P1577)
+
+#### 7. 背包补全
+
+- [P1616 疯狂的采药](https://www.luogu.com.cn/problem/P1616)
+
+#### 8. 高精度
+
+- [P1601 高精度加法](https://www.luogu.com.cn/problem/P1601)
+- [P1303 A*B Problem](https://www.luogu.com.cn/problem/P1303)
+
 ## 文档列表
 
 ### 基础篇

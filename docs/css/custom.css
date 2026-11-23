@@ -161,3 +161,119 @@ body {
     width: 36%;
     text-align: center;
 }
+
+/* ----- 补充板块的四级标题：左侧引导条，层级更清楚 ----- */
+.md-typeset h4 {
+    margin: 1.6em 0 .5em;
+    padding-left: .55rem;
+    border-left: 3px solid var(--md-primary-fg-color);
+    color: var(--md-primary-fg-color);
+    font-size: .9rem;
+}
+
+/* ===== 教学资料页：整页版式统一 ===== */
+.page-teaching .md-typeset h2 {
+    margin-top: 2.2em;
+    padding: .35em 0 .35em .7em;
+    border-left: 5px solid var(--md-primary-fg-color);
+    background: linear-gradient(90deg, rgba(63, 81, 181, .07), rgba(63, 81, 181, 0));
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+}
+
+.page-teaching .md-typeset h3 {
+    margin-top: 1.9em;
+    padding: .28em .8em;
+    font-size: 1.02rem;
+    border-left: 4px solid rgba(63, 81, 181, .55);
+    border-radius: 0 8px 8px 0;
+    background: rgba(63, 81, 181, .05);
+}
+
+/* 题目列表：圆形序号 */
+.page-teaching .md-typeset ol {
+    counter-reset: prob;
+    list-style: none;
+    padding-left: 0;
+    margin: .7em 0 0;
+}
+
+.page-teaching .md-typeset ol > li {
+    counter-increment: prob;
+    position: relative;
+    padding-left: 2.2em;
+    margin: .45em 0;
+}
+
+.page-teaching .md-typeset ol > li::before {
+    content: counter(prob);
+    position: absolute;
+    left: 0;
+    top: .12em;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    font-size: .78em;
+    font-weight: 800;
+    color: var(--md-primary-fg-color);
+    background: rgba(63, 81, 181, .16);
+    border-radius: 50%;
+}
+
+.page-teaching .md-typeset ul > li {
+    margin: .3em 0;
+}
+
+/* 表格：表头底色 + 斑马纹 + 圆角 */
+.page-teaching .md-typeset table:not([class]) {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.page-teaching .md-typeset table:not([class]) thead th {
+    background: rgba(63, 81, 181, .08);
+    font-weight: 700;
+}
+
+.page-teaching .md-typeset table:not([class]) tbody tr:nth-child(even) {
+    background: rgba(63, 81, 181, .035);
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .page-teaching .md-typeset h2 {
+    background: linear-gradient(90deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, 0));
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset h3 {
+    background: rgba(255, 255, 255, .05);
+    border-color: rgba(255, 255, 255, .10);
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset ol > li::before {
+    background: rgba(255, 255, 255, .10);
+    color: #a8b8ff;
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset table:not([class]) thead th {
+    background: rgba(255, 255, 255, .07);
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset table:not([class]) tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, .03);
+}
+
+/* 题目行悬停高亮，扫读更轻松 */
+.page-teaching .md-typeset ol > li {
+    padding: .18em .45em .18em 2.2em;
+    border-radius: 6px;
+    transition: background-color .15s ease;
+}
+
+.page-teaching .md-typeset ol > li:hover {
+    background-color: rgba(63, 81, 181, .06);
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset ol > li:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
