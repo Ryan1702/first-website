@@ -66,6 +66,7 @@
 
 1. [P2249 查找](https://www.luogu.com.cn/problem/P2249)
 2. [P1873 砍树](https://www.luogu.com.cn/problem/P1873)
+3. [P1577 切绳子](https://www.luogu.com.cn/problem/P1577)
 
 ### Day 12：双指针
 
