@@ -61,6 +61,10 @@
 
 1. [P1223 排队接水](https://www.luogu.com.cn/problem/P1223)
 2. [P1803 凌乱的 yyy / 线段覆盖](https://www.luogu.com.cn/problem/P1803)
+3. [U248666 区间选点](https://www.luogu.com.cn/problem/U248666)
+4. [U492914 区间覆盖](https://www.luogu.com.cn/problem/U492914)
+
+> 后三题都是区间贪心：**区间调度**（选最多不重叠）、**区间选点**（最少点打中全部）、**区间覆盖**（最少段盖满）。
 
 ### Day 11：二分查找与二分答案
 
