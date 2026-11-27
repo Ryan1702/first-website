@@ -24,7 +24,7 @@
 
     ---
 
-    PDF 讲义、PPT 课件、刷题合集、历年考题
+    PDF 讲义、PPT 课件、刷题合集、历年考题、STL 与双指针代码
 
     [:octicons-arrow-right-24: 进入](teaching/index.md)
 

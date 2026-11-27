@@ -21,7 +21,7 @@
 
 ## 📖 这是什么
 
-用 [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 搭建的静态站点，收录我大学期间的课内笔记、课外算法学习记录，以及给学生准备的讲义、课件、刷题合集与历年考题。
+用 [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 搭建的静态站点，收录我大学期间的课内笔记、课外算法学习记录，以及给学生准备的讲义、课件、刷题合集、历年考题，还有 STL 与双指针的代码题解。
 
 推送到 `main` 分支后，GitHub Actions 会自动构建并发布到 `gh-pages` 分支，站点实时更新。
 
@@ -31,7 +31,7 @@
 | :--- | :--- | :--- |
 | **课内学习** | 学习计划、离散数学、反腐败、专业写作、链表与栈笔记 | [进入](https://ryan1702.github.io/first-website/in-school/) |
 | **课外学习** | C++ 基础、算法大全、题解 | [进入](https://ryan1702.github.io/first-website/out-school/) |
-| **教学资料** | PDF 讲义、PPT 课件、刷题合集、历年考题 | [进入](https://ryan1702.github.io/first-website/teaching/) |
+| **教学资料** | PDF 讲义、PPT 课件、刷题合集、历年考题、STL 与双指针代码 | [进入](https://ryan1702.github.io/first-website/teaching/) |
 | **个人介绍** | 学习经历、专业技能、竞赛奖项、个人喜好 | [进入](https://ryan1702.github.io/first-website/about/) |
 
 ## 🛠 技术栈
@@ -55,7 +55,7 @@ first-website/
 │   ├── img/                    # 图片资源
 │   ├── in-school/              # 课内学习
 │   ├── out-school/             # 课外学习（C++ / 算法大全 / 题解）
-│   └── teaching/               # 教学资料（讲义 + 课件 + 刷题合集 + 历年考题）
+│   └── teaching/               # 教学资料（讲义 / 课件 / 刷题合集 / 历年考题 / STL / 双指针）
 ├── .github/
 │   ├── workflows/              # 自动部署工作流
 │   └── social-preview.png      # 分享链接缩略图

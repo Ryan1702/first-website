@@ -8,6 +8,25 @@ nav:
   - 个人介绍: about.md
   - 教学资料:
     - 简介: teaching/index.md
+    - STL 代码:
+      - vector 动态数组: teaching/STL/01-vector.md
+      - string 字符串: teaching/STL/02-string.md
+      - stack 栈: teaching/STL/03-stack.md
+      - queue 队列: teaching/STL/04-queue.md
+      - deque 双端队列: teaching/STL/05-deque.md
+      - list 双向链表: teaching/STL/06-list.md
+      - priority_queue 优先队列: teaching/STL/07-priority-queue.md
+      - set 集合: teaching/STL/08-set.md
+      - map 映射: teaching/STL/09-map.md
+      - 常用算法函数: teaching/STL/10-tools.md
+    - 双指针题解:
+      - 两数之和计数: teaching/双指针/01-两数之和计数.md
+      - 连续子段和为 k 的个数: teaching/双指针/02-连续子段和为k的个数.md
+      - 判断回文串: teaching/双指针/03-判断回文串.md
+      - 移除数组中的零: teaching/双指针/04-移除数组中的零.md
+      - 合并两个有序数组: teaching/双指针/05-合并两个有序数组.md
+      - 有序数组去重: teaching/双指针/06-有序数组去重.md
+      - 无重复字符的最长子串: teaching/双指针/07-无重复字符的最长子串.md
   - 课内学习:
     - 简介: in-school/index.md
     - 学习计划: in-school/plan.md
