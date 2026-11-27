@@ -8,6 +8,10 @@ nav:
   - 个人介绍: about.md
   - 教学资料:
     - 简介: teaching/index.md
+    - 刷题合集: teaching/刷题合集/index.md
+    - 讲义: teaching/讲义/index.md
+    - 课件: teaching/课件/index.md
+    - 历年考题: teaching/历年考题/index.md
     - STL 代码:
       - vector 动态数组: teaching/STL/01-vector.md
       - string 字符串: teaching/STL/02-string.md
