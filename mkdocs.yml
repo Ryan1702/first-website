@@ -25,10 +25,10 @@ nav:
       - 常用算法函数: teaching/STL/10-tools.md
     - 保密资料:
       - 简介: teaching/保密/index.md
-      - 2022 年试卷题解: teaching/保密/2022/index.md
-      - 2023 年试卷题解: teaching/保密/2023/index.md
-      - 2024 年试卷题解: teaching/保密/2024/index.md
       - 2025 年试卷题解: teaching/保密/2025/index.md
+      - 2024 年试卷题解: teaching/保密/2024/index.md
+      - 2023 年试卷题解: teaching/保密/2023/index.md
+      - 2022 年试卷题解: teaching/保密/2022/index.md
     - 双指针题解:
       - 两数之和计数: teaching/双指针/01-两数之和计数.md
       - 连续子段和为 k 的个数: teaching/双指针/02-连续子段和为k的个数.md
