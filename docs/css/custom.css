@@ -277,3 +277,65 @@ body {
 [data-md-color-scheme="slate"] .page-teaching .md-typeset ol > li:hover {
     background-color: rgba(255, 255, 255, .05);
 }
+
+/* ===== 保密页面：未解锁时隐藏正文 ===== */
+/* 未解锁时隐藏正文与右侧目录（:has 不支持时会退化为直接显示） */
+html:has(.lock-gate):not(.unlocked) .md-typeset > *:not(.lock-gate):not(h1) {
+    display: none;
+}
+
+html:has(.lock-gate):not(.unlocked) .md-sidebar--secondary {
+    display: none;
+}
+
+.md-typeset .lock-gate {
+    margin: 1.4em 0;
+    padding: 1.1rem 1.3rem;
+    border: 1px solid rgba(63, 81, 181, .22);
+    border-radius: 10px;
+    background: rgba(63, 81, 181, .04);
+}
+
+.md-typeset .lock-gate input {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: .8rem 0 .6rem;
+    padding: .45rem .65rem;
+    border: 1px solid rgba(0, 0, 0, .18);
+    border-radius: 6px;
+    font-size: .8rem;
+    background: #fff;
+    color: #222;
+}
+
+.md-typeset .lock-gate button {
+    padding: .4rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--md-primary-fg-color);
+    color: #fff;
+    font-size: .78rem;
+    cursor: pointer;
+}
+
+.md-typeset .lock-gate button:hover {
+    opacity: .9;
+}
+
+.md-typeset #lock-msg {
+    margin: .6rem 0 0;
+    font-size: .75rem;
+    color: #c62828;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .lock-gate {
+    background: rgba(255, 255, 255, .05);
+    border-color: rgba(255, 255, 255, .14);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .lock-gate input {
+    background: rgba(255, 255, 255, .08);
+    color: #eee;
+    border-color: rgba(255, 255, 255, .18);
+}

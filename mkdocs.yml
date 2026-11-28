@@ -23,6 +23,9 @@ nav:
       - set 集合: teaching/STL/08-set.md
       - map 映射: teaching/STL/09-map.md
       - 常用算法函数: teaching/STL/10-tools.md
+    - 保密资料:
+      - 简介: teaching/保密/index.md
+      - 2025 年试卷题解: teaching/保密/2025/index.md
     - 双指针题解:
       - 两数之和计数: teaching/双指针/01-两数之和计数.md
       - 连续子段和为 k 的个数: teaching/双指针/02-连续子段和为k的个数.md
@@ -280,6 +283,7 @@ extra_javascript:
   - javascripts/katex-init.js
   - javascripts/new-tab.js      # PDF / 外链在新标签页打开
   - javascripts/page-class.js   # 给每页加 page-xxx 类，便于按页写样式
+  - javascripts/secret-lock.js  # 保密页面的密码门
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - css/custom.css
