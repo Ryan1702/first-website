@@ -1,22 +1,23 @@
 /* 保密页面：输入密码后解锁正文
- * 说明：这是「前端密码门」，只能挡住随手点进来的人，
- * 页面内容在 HTML 里仍然是明文，不能当作真正的安全措施。
+ * 密码写在对应页面的 .lock-gate[data-password] 上，每个页面独立解锁。
+ * 这是「前端密码门」，只能挡住随手点进来的人，页面内容在 HTML 里仍是明文。
  */
 (function () {
   "use strict";
 
-  var PASSWORD = "siluqingxi";
-  var STORAGE_KEY = "wyf-secret-unlocked";
-
-  function unlock() {
-    document.documentElement.classList.add("unlocked");
-    document.querySelectorAll(".lock-gate").forEach(function (el) {
-      el.style.display = "none";
-    });
-  }
-
   function init() {
-    if (localStorage.getItem(STORAGE_KEY) === "1") {
+    var gate = document.querySelector(".lock-gate");
+    if (!gate) return;
+
+    var password = gate.getAttribute("data-password") || "";
+    var key = "wyf-secret:" + location.pathname;
+
+    function unlock() {
+      document.documentElement.classList.add("unlocked");
+      gate.style.display = "none";
+    }
+
+    if (localStorage.getItem(key) === "1") {
       unlock();
       return;
     }
@@ -27,11 +28,11 @@
     if (!input || !btn) return;
 
     function tryUnlock() {
-      if (input.value === PASSWORD) {
-        localStorage.setItem(STORAGE_KEY, "1");
+      if (input.value === password) {
+        localStorage.setItem(key, "1");
         unlock();
-      } else if (msg) {
-        msg.textContent = "密码不对，再试一次。";
+      } else {
+        if (msg) msg.textContent = "密码不对，再试一次。";
         input.value = "";
         input.focus();
       }

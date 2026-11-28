@@ -5,7 +5,7 @@ search:
 
 # 2025 年试卷题解
 
-<div class="lock-gate">
+<div class="lock-gate" data-password="siluqingxi">
 
 <strong>本页需要密码才能查看。</strong>
 
