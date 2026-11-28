@@ -1,0 +1,388 @@
+/* ----- 您的原始背景设置（完全保留） ----- */
+body {
+    background-image: url("../img/2.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+[data-md-color-scheme="default"] .md-container {
+    background-color: rgba(255, 255, 255, 0.93) !important;
+}
+[data-md-color-scheme="slate"] .md-container {
+    background-color: rgba(22, 27, 34, 0.88) !important;
+}
+
+/* ----- 强制左侧导航所有标题背景透明，取消固定 ----- */
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav_title,
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__link.md-nav__link--active {  /* 针对“课外学习”类名 */
+    position: static !important;           /* 取消 sticky 固定 */
+    top: auto !important;
+    transform: none !important;
+    /* 强制背景透明，覆盖所有背景相关属性 */
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    /* 不修改尺寸、内边距、字体大小，保持原有高度 */
+}
+
+/* 深色主题下同样透明（主题切换时可能会添加背景，我们强制覆盖） */
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav_title,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link.md-nav__link--active {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 确保右侧目录保持原样（透明背景） */
+.md-sidebar--secondary .md-nav__title,
+.md-sidebar--secondary .md-nav_title,
+.md-sidebar--secondary .md-nav__item--section > .md-nav__link {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* ----- 右侧目录：标题和子标题背景透明 + 取消固定 ----- */
+
+/* 1. 取消右侧边栏内部容器的 sticky */
+.md-sidebar--secondary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-sidebar__inner {
+    position: static !important;
+    top: auto !important;
+}
+
+/* 2. 右侧目录所有标题、子标题、激活项：透明 + 取消 sticky */
+.md-sidebar--secondary .md-nav__title,
+.md-sidebar--secondary .md-nav_title,
+.md-sidebar--secondary .md-nav--secondary .md-nav__title,
+.md-sidebar--secondary .md-nav__item--section > .md-nav__link,
+.md-sidebar--secondary .md-nav__link,
+.md-sidebar--secondary .md-nav__link.md-nav__link--active {
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. 深色主题同样处理 */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-sidebar__scrollwrap,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-sidebar__inner {
+    position: static !important;
+    top: auto !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav_title,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav--secondary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link.md-nav__link--active {
+    position: static !important;
+    top: auto !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+/* ----- 首页卡片导航（grid cards）----- */
+.md-typeset .grid.cards > ul > li {
+    background-color: #ffffff;
+    border: 1px solid rgba(63, 81, 181, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(63, 81, 181, 0.18);
+    border-color: rgba(63, 81, 181, 0.38);
+}
+
+/* 卡片里的“进入”链接加强一点 */
+.md-typeset .grid.cards > ul > li > p:last-child a {
+    font-weight: 600;
+}
+
+/* 深色模式下的卡片 */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.26);
+}
+
+/* ----- 404 页面按钮排版 ----- */
+.md-typeset .md-button {
+    margin: 4px 6px 4px 0;
+}
+
+/* ----- 表格占满内容宽度，避免窄表格靠左留白 ----- */
+.md-typeset__table {
+    display: block;
+    width: 100%;
+}
+.md-typeset table:not([class]) {
+    display: table;
+    width: 100%;
+}
+
+/* ----- 个人介绍页：导语与奖项表 ----- */
+.md-typeset .lead {
+    font-size: 1.02rem;
+    color: var(--md-default-fg-color--light);
+    line-height: 1.7;
+}
+
+.md-typeset .awards table {
+    table-layout: fixed;
+}
+.md-typeset .awards table th:first-child,
+.md-typeset .awards table td:first-child {
+    width: 64%;
+}
+.md-typeset .awards table th:last-child,
+.md-typeset .awards table td:last-child {
+    width: 36%;
+    text-align: center;
+}
+
+/* ----- 补充板块的四级标题：左侧引导条，层级更清楚 ----- */
+.md-typeset h4 {
+    margin: 1.6em 0 .5em;
+    padding-left: .55rem;
+    border-left: 3px solid var(--md-primary-fg-color);
+    color: var(--md-primary-fg-color);
+    font-size: .9rem;
+}
+
+/* ===== 教学资料页：整页版式统一 ===== */
+.page-teaching .md-typeset h2 {
+    margin-top: 2.2em;
+    padding: .35em 0 .35em .7em;
+    border-left: 5px solid var(--md-primary-fg-color);
+    background: linear-gradient(90deg, rgba(63, 81, 181, .07), rgba(63, 81, 181, 0));
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+}
+
+.page-teaching .md-typeset h3 {
+    margin-top: 1.9em;
+    padding: .28em .8em;
+    font-size: 1.02rem;
+    border-left: 4px solid rgba(63, 81, 181, .55);
+    border-radius: 0 8px 8px 0;
+    background: rgba(63, 81, 181, .05);
+}
+
+/* 题目列表：圆形序号 */
+.page-teaching .md-typeset ol {
+    counter-reset: prob;
+    list-style: none;
+    padding-left: 0;
+    margin: .7em 0 0;
+}
+
+.page-teaching .md-typeset ol > li {
+    counter-increment: prob;
+    position: relative;
+    padding-left: 2.2em;
+    margin: .45em 0;
+}
+
+.page-teaching .md-typeset ol > li::before {
+    content: counter(prob);
+    position: absolute;
+    left: 0;
+    top: .12em;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    font-size: .78em;
+    font-weight: 800;
+    color: var(--md-primary-fg-color);
+    background: rgba(63, 81, 181, .16);
+    border-radius: 50%;
+}
+
+.page-teaching .md-typeset ul > li {
+    margin: .3em 0;
+}
+
+/* 表格：表头底色 + 斑马纹 + 圆角 */
+.page-teaching .md-typeset table:not([class]) {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.page-teaching .md-typeset table:not([class]) thead th {
+    background: rgba(63, 81, 181, .08);
+    font-weight: 700;
+}
+
+.page-teaching .md-typeset table:not([class]) tbody tr:nth-child(even) {
+    background: rgba(63, 81, 181, .035);
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .page-teaching .md-typeset h2 {
+    background: linear-gradient(90deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, 0));
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset h3 {
+    background: rgba(255, 255, 255, .05);
+    border-color: rgba(255, 255, 255, .10);
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset ol > li::before {
+    background: rgba(255, 255, 255, .10);
+    color: #a8b8ff;
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset table:not([class]) thead th {
+    background: rgba(255, 255, 255, .07);
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset table:not([class]) tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, .03);
+}
+
+/* 题目行悬停高亮，扫读更轻松 */
+.page-teaching .md-typeset ol > li {
+    padding: .18em .45em .18em 2.2em;
+    border-radius: 6px;
+    transition: background-color .15s ease;
+}
+
+.page-teaching .md-typeset ol > li:hover {
+    background-color: rgba(63, 81, 181, .06);
+}
+
+[data-md-color-scheme="slate"] .page-teaching .md-typeset ol > li:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+/* ===== 保密页面：未解锁时隐藏正文 ===== */
+/* 未解锁时隐藏正文与右侧目录（:has 不支持时会退化为直接显示） */
+html:has(.lock-gate):not(.unlocked) .md-typeset > *:not(.lock-gate):not(h1) {
+    display: none;
+}
+
+html:has(.lock-gate):not(.unlocked) .md-sidebar--secondary {
+    display: none;
+}
+
+.md-typeset .lock-gate {
+    margin: 1.4em 0;
+    padding: 1.1rem 1.3rem;
+    border: 1px solid rgba(63, 81, 181, .22);
+    border-radius: 10px;
+    background: rgba(63, 81, 181, .04);
+}
+
+.md-typeset .lock-gate input {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: .8rem 0 .6rem;
+    padding: .45rem .65rem;
+    border: 1px solid rgba(0, 0, 0, .18);
+    border-radius: 6px;
+    font-size: .8rem;
+    background: #fff;
+    color: #222;
+}
+
+.md-typeset .lock-gate button {
+    padding: .4rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--md-primary-fg-color);
+    color: #fff;
+    font-size: .78rem;
+    cursor: pointer;
+}
+
+.md-typeset .lock-gate button:hover {
+    opacity: .9;
+}
+
+.md-typeset #lock-msg {
+    margin: .6rem 0 0;
+    font-size: .75rem;
+    color: #c62828;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .lock-gate {
+    background: rgba(255, 255, 255, .05);
+    border-color: rgba(255, 255, 255, .14);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .lock-gate input {
+    background: rgba(255, 255, 255, .08);
+    color: #eee;
+    border-color: rgba(255, 255, 255, .18);
+}
+
+/* ===== 侧边栏高度：滚到底时不与黑色底栏重叠 =====
+ * 由 sidebar-fit.js 测出顶栏(--wyf-header-h)与底栏(--wyf-footer-h)的实际高度，
+ * 侧边栏高度 = 视口高度 - 顶栏 - 底栏，内部滚动，保证既不压住底栏、也不超出主内容区。
+ */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar {
+        position: sticky;
+        top: var(--wyf-header-h, 2.4rem);
+        height: calc(100vh - var(--wyf-header-h, 2.4rem) - var(--wyf-footer-h, 0px));
+        max-height: 100%;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    @supports (height: 100dvh) {
+        .md-sidebar {
+            height: calc(100dvh - var(--wyf-header-h, 2.4rem) - var(--wyf-footer-h, 0px));
+        }
+    }
+
+    .md-sidebar__scrollwrap {
+        flex: 1 1 auto;
+        min-height: 0;
+        height: auto;
+        max-height: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 0 0.2rem;
+        position: static;
+    }
+
+    .md-sidebar__inner {
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+}
+
+/* 底栏永远压在最上层，避免任何内容穿透到黑底上 */
+.md-footer {
+    position: relative;
+    z-index: 4;
+}
