@@ -339,3 +339,50 @@ html:has(.lock-gate):not(.unlocked) .md-sidebar--secondary {
     color: #eee;
     border-color: rgba(255, 255, 255, .18);
 }
+
+/* ===== 侧边栏高度：滚到底时不与黑色底栏重叠 =====
+ * 由 sidebar-fit.js 测出顶栏(--wyf-header-h)与底栏(--wyf-footer-h)的实际高度，
+ * 侧边栏高度 = 视口高度 - 顶栏 - 底栏，内部滚动，保证既不压住底栏、也不超出主内容区。
+ */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar {
+        position: sticky;
+        top: var(--wyf-header-h, 2.4rem);
+        height: calc(100vh - var(--wyf-header-h, 2.4rem) - var(--wyf-footer-h, 0px));
+        max-height: 100%;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    @supports (height: 100dvh) {
+        .md-sidebar {
+            height: calc(100dvh - var(--wyf-header-h, 2.4rem) - var(--wyf-footer-h, 0px));
+        }
+    }
+
+    .md-sidebar__scrollwrap {
+        flex: 1 1 auto;
+        min-height: 0;
+        height: auto;
+        max-height: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 0 0.2rem;
+        position: static;
+    }
+
+    .md-sidebar__inner {
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+}
+
+/* 底栏永远压在最上层，避免任何内容穿透到黑底上 */
+.md-footer {
+    position: relative;
+    z-index: 4;
+}

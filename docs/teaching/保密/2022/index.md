@@ -17,6 +17,19 @@ search:
 
 原卷：[2022 年考题](../../final/2022.pdf)
 
+## 难度顺序（由易到难）
+
+| 顺序 | 题号 | 题目 | 算法 / 技巧 |
+| :---: | :---: | --- | --- |
+| 1 | 1 | 螺旋矩阵 | 方向模拟、访问标记、走满就停 |
+| 2 | 4 | 输出 1-N 的全排列 | DFS 回溯、`used` 标记、天然字典序 |
+| 3 | 7 | 分解质因数 | 试除法、指数统计、输出格式里的空格 |
+| 4 | 2 | 化学分子质量 | 字符串扫描、括号内先累加再乘倍数 |
+| 5 | 6 | 讨厌的数 | `map` 记录最右位置、每个数只删一次 |
+| 6 | 3 | 购票插队问题 | 数组模拟队列、后缀加权、超阈值清空 |
+| 7 | 5 | 区间最小数乘区间和的最大值 | 单调栈（STL `stack`）、前缀和、$O(n)$ |
+| 8 | 8 | 解四次一元方程 | 浮点二分、`eps` 控制循环、保留 6 位小数 |
+
 ## 第 1 题 · 螺旋矩阵
 
 ### 思路
@@ -28,6 +41,8 @@ search:
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
+
+typedef long long ll;
 
 int m, n;
 int a[15][15];
@@ -81,25 +96,36 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+
+// 元素符号对应的质量
+ll weight(char c)
+{
+    if (c == 'H')
+        return 1;
+    if (c == 'C')
+        return 12;
+    return 16;
+}
+
 int main()
 {
     string s;
     cin >> s;
 
-    long long total = 0;
+    ll total = 0;
     int i = 0, len = s.size();
     while (i < len)
     {
         if (s[i] == '(')
         {
             i++;
-            long long group = 0;
+            ll group = 0;
             while (s[i] != ')')
             {
-                char e = s[i];
-                long long w = (e == 'H' ? 1 : (e == 'C' ? 12 : 16));
+                ll w = weight(s[i]);
                 i++;
-                long long cnt = 0;
+                ll cnt = 0;
                 while (i < len && isdigit(s[i]))
                 {
                     cnt = cnt * 10 + (s[i] - '0');
@@ -110,7 +136,7 @@ int main()
                 group += w * cnt;
             }
             i++;
-            long long mult = 0;
+            ll mult = 0;
             while (i < len && isdigit(s[i]))
             {
                 mult = mult * 10 + (s[i] - '0');
@@ -122,10 +148,9 @@ int main()
         }
         else
         {
-            char e = s[i];
-            long long w = (e == 'H' ? 1 : (e == 'C' ? 12 : 16));
+            ll w = weight(s[i]);
             i++;
-            long long cnt = 0;
+            ll cnt = 0;
             while (i < len && isdigit(s[i]))
             {
                 cnt = cnt * 10 + (s[i] - '0');
@@ -146,7 +171,7 @@ int main()
 
 ### 思路
 
-直接用数组模拟队伍，每个元素记录「编号、怒气值、是否插队进来」。插入时先找到 $x$ 的位置，插到它前面，再把它后面所有人的怒气值加 $y$；每次操作后检查总怒气是否严格大于 $M$，若是就删掉所有插队者并把怒气清零。$N \le 1000$，单次操作 $O(N)$ 足够。
+用数组模拟队伍，每个人记录「编号、怒气值、是否插队进来」。插入时先找到 $x$ 的位置，插到它前面，再把它后面所有人的怒气值加 $y$；每次操作后检查总怒气是否严格大于 $M$，若是就删掉所有插队者并把怒气清零。$N \le 1000$，单次操作 $O(N)$ 足够。
 
 ### 代码
 
@@ -154,22 +179,23 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node
+typedef long long ll;
+
+struct Person
 {
     int id;
-    int anger;
-    bool inserted;
+    ll anger;
+    bool inserted;    // 是不是插队进来的
 };
-
-int n;
-long long M;
 
 int main()
 {
+    int n;
+    ll M;
     cin >> n >> M;
 
-    vector<Node> q;
-    long long sum = 0;
+    vector<Person> q;
+    ll sum = 0;
 
     for (int i = 1; i <= n; i++)
     {
@@ -181,16 +207,20 @@ int main()
         }
         else
         {
-            int x, y;
+            int x;
+            ll y;
             cin >> x >> y;
 
             int pos = 0;
             for (int k = 0; k < (int)q.size(); k++)
+            {
                 if (q[k].id == x)
                     pos = k;
+            }
 
             q.insert(q.begin() + pos, {i, 0, true});
 
+            // 插队位置后面的所有人都加怒气
             for (int k = pos + 1; k < (int)q.size(); k++)
             {
                 q[k].anger += y;
@@ -198,19 +228,19 @@ int main()
             }
         }
 
+        // 怒气总和超过阈值：赶走所有插队者，怒气清零
         if (sum > M)
         {
-            vector<Node> nq;
-            for (int k = 0; k < (int)q.size(); k++)
+            vector<Person> keep;
+            for (Person p : q)
             {
-                if (!q[k].inserted)
+                if (!p.inserted)
                 {
-                    Node t = q[k];
-                    t.anger = 0;
-                    nq.push_back(t);
+                    p.anger = 0;
+                    keep.push_back(p);
                 }
             }
-            q = nq;
+            q = keep;
             sum = 0;
         }
     }
@@ -231,13 +261,15 @@ int main()
 
 ### 思路
 
-从第 $0$ 位开始 DFS，每次按 $1$ 到 $N$ 的顺序尝试没用过的数字，用 `used` 数组标记。因为按数值从小到大枚举，输出的顺序天然就是字典序。复杂度 $O(N \times N!)$。
+从第 $0$ 位开始 DFS，每次按 $1$ 到 $N$ 的顺序尝试没用过的数字，用 `used` 数组标记。因为按数值从小到大枚举，输出顺序天然就是字典序。复杂度 $O(N \times N!)$。
 
 ### 代码
 
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
+
+typedef long long ll;
 
 int n;
 int a[10];
@@ -279,7 +311,7 @@ int main()
 
 ### 思路
 
-对每个位置 $i$，用单调栈求出「以 $a_i$ 为最小值的最长区间」$[L, R]$：左边找第一个严格更小的、右边找第一个小于等于的（这样区间不重复）。区间和用前缀和 $O(1)$ 求出，再乘 $a_i$ 更新答案。总复杂度 $O(n)$。
+对每个位置 $i$，用单调栈（STL 的 `stack`）求出「以 $a_i$ 为最小值的最长区间」$[L, R]$：左边找第一个严格更小的、右边找第一个小于等于的（这样区间不重复）。区间和用前缀和 $O(1)$ 求出，再乘 $a_i$ 更新答案。总复杂度 $O(n)$。
 
 ### 代码
 
@@ -287,10 +319,11 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+
 int n;
-long long a[100005];
-long long pre[100005];
-int st[100005];
+ll a[100005];
+ll pre[100005];     // 前缀和
 int L[100005], R[100005];
 
 int main()
@@ -302,31 +335,31 @@ int main()
         pre[i] = pre[i - 1] + a[i];
     }
 
-    int top = 0;
+    // 左边第一个严格更小的位置
+    stack<int> st;
     for (int i = 1; i <= n; i++)
     {
-        while (top > 0 && a[st[top]] >= a[i])
-            top--;
-        L[i] = (top == 0 ? 1 : st[top] + 1);
-        st[++top] = i;
+        while (!st.empty() && a[st.top()] >= a[i])
+            st.pop();
+        L[i] = st.empty() ? 1 : st.top() + 1;
+        st.push(i);
     }
 
-    top = 0;
+    // 右边第一个小于等于的位置（这样区间不会重复计算）
+    st = stack<int>();
     for (int i = n; i >= 1; i--)
     {
-        while (top > 0 && a[st[top]] > a[i])
-            top--;
-        R[i] = (top == 0 ? n : st[top] - 1);
-        st[++top] = i;
+        while (!st.empty() && a[st.top()] > a[i])
+            st.pop();
+        R[i] = st.empty() ? n : st.top() - 1;
+        st.push(i);
     }
 
-    long long ans = 0;
+    ll ans = 0;
     for (int i = 1; i <= n; i++)
     {
-        long long sum = pre[R[i]] - pre[L[i] - 1];
-        long long val = a[i] * sum;
-        if (val > ans)
-            ans = val;
+        ll sum = pre[R[i]] - pre[L[i] - 1];
+        ans = max(ans, a[i] * sum);
     }
 
     cout << ans << "\n";
@@ -338,7 +371,7 @@ int main()
 
 ### 思路
 
-先记录数组 A 中每个数最靠右出现的位置；然后对 B 里出现过的每个不同数字，只处理一次：删掉它在 A 中最右的那次出现。最后按原顺序输出没被删的元素。用 `map` 存「值 → 最右位置」，复杂度 $O((n+m)\log n)$。
+先记录数组 A 中每个数最靠右出现的位置；然后对 B 里出现过的每个不同数字只处理一次：删掉它在 A 中最右的那次出现。最后按原顺序输出没被删的元素。用 `map` 存「值 → 最右位置」，复杂度 $O((n+m)\log n)$。
 
 ### 代码
 
@@ -346,40 +379,42 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+
 int n, m;
-long long a[100005];
-long long b[100005];
-bool del_[100005];
-map<long long, int> lastPos;
+ll a[100005];
+ll b[100005];
+bool removed[100005];
 
 int main()
 {
     cin >> n >> m;
     for (int i = 1; i <= n; i++)
-    {
         cin >> a[i];
-        lastPos[a[i]] = i;
-    }
     for (int i = 1; i <= m; i++)
         cin >> b[i];
 
+    // 记录 A 中每个数最靠右的位置
+    map<ll, int> lastPos;
+    for (int i = 1; i <= n; i++)
+        lastPos[a[i]] = i;
+
+    // 每个讨厌的数只删一次：删它在 A 中最靠右的那次出现
     for (int i = 1; i <= m; i++)
     {
         auto it = lastPos.find(b[i]);
         if (it == lastPos.end())
             continue;
-        int p = it->second;
-        if (p != -1)
-        {
-            del_[p] = true;
-            it->second = -1;
-        }
+        if (it->second == -1)
+            continue;
+        removed[it->second] = true;
+        it->second = -1;       // 标记这个数已经处理过
     }
 
     bool first = true;
     for (int i = 1; i <= n; i++)
     {
-        if (del_[i])
+        if (removed[i])
             continue;
         if (!first)
             cout << " ";
@@ -397,7 +432,7 @@ int main()
 
 ### 思路
 
-从 $2$ 开始试除到 $\sqrt{N}$：能整除就统计这个质因数的指数，按 `p ^ cnt` 输出（指数为 $1$ 时只输出 `p`）；试除结束后如果 $N > 1$，说明剩下的部分本身就是一个质因数。注意输出里 `^` 和 `*` 两边各有一个空格。
+从 $2$ 开始试除到 $\sqrt{N}$：能整除就统计这个质因数的指数，按 `p ^ cnt` 输出（指数为 $1$ 时只输出 `p`）；试除结束后如果 $N > 1$，说明剩下的部分本身就是质数。注意输出里 `^` 和 `*` 两边各有一个空格。
 
 ### 代码
 
@@ -405,13 +440,15 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+
 int main()
 {
-    long long n;
+    ll n;
     cin >> n;
 
     bool first = true;
-    for (long long p = 2; p * p <= n; p++)
+    for (ll p = 2; p * p <= n; p++)
     {
         if (n % p != 0)
             continue;
@@ -443,7 +480,7 @@ int main()
 
 ### 思路
 
-题目保证函数在 $[L, R]$ 上严格单调且有唯一解，所以直接二分：每次取中点，看 $f(L)$ 与 $f(\text{mid})$ 是否异号，异号说明根在左半边，否则在右半边；循环 $200$ 次后区间已经足够小，输出中点即可（保留 6 位小数）。
+题目保证函数在 $[L, R]$ 上严格单调且有唯一解，所以直接二分：每次取中点，看 $f(L)$ 与 $f(\text{mid})$ 是否异号，异号说明根在左半边，否则在右半边。循环条件写成 `while (R - L > eps)`（`eps = 1e-7`），比固定迭代次数更直接，也更容易根据精度调整。
 
 ### 代码
 
@@ -451,7 +488,10 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+
 double a, b, c, d, e, k, L, R;
+const double eps = 1e-7;
 
 double f(double x)
 {
@@ -463,15 +503,12 @@ int main()
     cin >> a >> b >> c >> d >> e >> k >> L >> R;
 
     double fl = f(L), fr = f(R);
-    for (int step = 0; step < 200; step++)
+    while (R - L > eps)
     {
         double mid = (L + R) / 2;
         double fm = f(mid);
         if (fl * fm <= 0)
-        {
             R = mid;
-            fr = fm;
-        }
         else
         {
             L = mid;
